@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application
+    x:Class="RoutedCommands.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RoutedCommands">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
+                <!-- Other merged dictionaries here -->
+            </ResourceDictionary.MergedDictionaries>
+            <!-- Other app resources here -->
+            <Style x:Key="DefaultContentDialogStyle" TargetType="ContentDialog">
+                <Setter Property="Foreground" Value="{ThemeResource ContentDialogForeground}" />
+                <Setter Property="Background" Value="{ThemeResource ContentDialogBackground}" />
+                <Setter Property="BorderBrush" Value="{ThemeResource ContentDialogBorderBrush}" />
+                <Setter Property="BorderThickness" Value="{ThemeResource ContentDialogBorderWidth}" />
+                <Setter Property="CornerRadius" Value="{ThemeResource OverlayCornerRadius}" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
